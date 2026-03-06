@@ -1,0 +1,16 @@
+#PAKET ANALİZİ
+from scapy.all import *
+
+packet = sniff(count=1)
+
+packet.show()
+
+
+
+#LLC FRAME OLUŞTURMA
+
+from scapy.all import *
+
+pkt = LLC(dsap=0x06, ssap=0x06, ctrl=0x03)
+
+pkt.show()
